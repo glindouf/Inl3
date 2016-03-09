@@ -10,6 +10,7 @@ import javax.swing.JOptionPane;
  * @author Jacob
  */
 public class Connect {
+   
     Connection conn = null;
     
     public static Connection ConnectDB(){
