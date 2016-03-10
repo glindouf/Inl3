@@ -110,7 +110,9 @@ public class MenyGUI extends javax.swing.JFrame {
     }
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
-        // TODO add your handling code here:
+        dispose();
+        AddMember a = new AddMember();
+        a.setVisible(true);// TODO add your handling code here:
     }
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked

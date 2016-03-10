@@ -166,8 +166,9 @@ public class Register extends javax.swing.JFrame {
     }
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
-
-        PrintColumns.printNames();
+        PrintNames s = new PrintNames();
+        s.setVisible(true);
+    //     PrintColumns.printNames();
         // TODO add your handling code here:
     }
 
