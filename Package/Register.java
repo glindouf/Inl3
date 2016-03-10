@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.*;
 import java.io.*;
+import java.sql.*;
 
 public class Register extends javax.swing.JFrame {
 
@@ -160,11 +161,13 @@ public class Register extends javax.swing.JFrame {
     }
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+
         // TODO add your handling code here:
     }
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
 
+        PrintColumns.printNames();
         // TODO add your handling code here:
     }
 

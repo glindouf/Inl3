@@ -3,12 +3,12 @@ import java.sql.*;
      
 public class PrintColumns  {
 
-  public static void main(String args[]) {
+  public static void printNames() {
     
       
     String url = "jdbc:sqlite:databas.db";
     Connection con;
-    String query = "select * from medlem";
+    String query = "select * from medlem order by familyName, givenName;";
     Statement stmt;
   
     try {
@@ -31,7 +31,7 @@ public class PrintColumns  {
       int numberOfColumns = rsmd.getColumnCount();
   
       for (int i = 1; i <= numberOfColumns; i++) {
-        if (i > 1) System.out.print("\t");
+        if (i > 1) System.out.print(" ,");
         String columnName = rsmd.getColumnName(i);
         System.out.print(columnName);
       }
@@ -39,7 +39,7 @@ public class PrintColumns  {
 
       while (rs.next()) {
         for (int i = 1; i <= numberOfColumns; i++) {
-          if (i > 1) System.out.print("\t");
+          if (i > 1) System.out.print(" ,");
           String columnValue = rs.getString(i);
           System.out.print(columnValue);
         }
