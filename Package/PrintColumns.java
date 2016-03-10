@@ -1,4 +1,5 @@
 import java.sql.*;
+
      
 public class PrintColumns  {
 
@@ -34,10 +35,7 @@ public class PrintColumns  {
         String columnName = rsmd.getColumnName(i);
         System.out.print(columnName);
       }
-      System.out.println ("\n____________________"   +
-      "__________________________________________"  +
-      "__________________________________________"  +
-        "________________________________________");
+      System.out.println("\n");
 
       while (rs.next()) {
         for (int i = 1; i <= numberOfColumns; i++) {
@@ -45,10 +43,7 @@ public class PrintColumns  {
           String columnValue = rs.getString(i);
           System.out.print(columnValue);
         }
-        System.out.println ("\n____________________"   +
-        "__________________________________________"  +
-        "__________________________________________"  +
-          "________________________________________");
+        System.out.println("\n");
       }
 
       stmt.close();

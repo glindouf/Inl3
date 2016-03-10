@@ -5,11 +5,17 @@ import java.io.*;
 
 public class MenyGUI extends javax.swing.JFrame {
 
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel1;
+
     public MenyGUI() {
         initComponents();
     }
 
-  
     @SuppressWarnings("unchecked")
     
     private void initComponents() {
@@ -78,10 +84,11 @@ public class MenyGUI extends javax.swing.JFrame {
                 jButton4MouseClicked(evt);
             }
         });
+
         jPanel1.add(jButton4);
         jButton4.setBounds(110, 490, 220, 70);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI_Images/Drawing (2).png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI_Images/Logo.png"))); // NOI18N
         jPanel1.add(jLabel1);
         jLabel1.setBounds(10, 0, 434, 700);
         jLabel1.getAccessibleContext().setAccessibleName("");
@@ -136,15 +143,9 @@ public class MenyGUI extends javax.swing.JFrame {
                     break;
                 }
             }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(MenyGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(MenyGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(MenyGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(MenyGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
+        } 
+        catch (Exception e) {
+        } 
      
         java.awt.EventQueue.invokeLater(new Runnable() {
             @Override
@@ -153,11 +154,4 @@ public class MenyGUI extends javax.swing.JFrame {
             }
         });
     }
-
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JPanel jPanel1;
 }

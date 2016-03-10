@@ -1,1 +1,3 @@
-java -classpath ".;sqlite-jdbc-3.8.11.2.jar" frmLogin
+java -classpath ".;sqlite-jdbc-3.8.11.2.jar" PrintColumns
+
+javac -classpath ".;sqlite-jdbc-3.8.11.2.jar" PrintColumns.java
